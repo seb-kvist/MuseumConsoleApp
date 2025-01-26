@@ -20,7 +20,7 @@ public class Museum
         {
             Room activeRoom = navigation.GetActiveRoom();
             Console.WriteLine("Choose a room: ");
-            string input = Console.ReadLine();
+            string input = Console.ReadLine() ?? string.Empty;
             Console.Clear();
 
             int userChoice;

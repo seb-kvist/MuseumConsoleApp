@@ -22,7 +22,9 @@ public class Room
     };
     public Room()
     {
-       
+        Name = string.Empty;
+        artworks = new List<Artwork>();
+        ConnectedRooms = new List<Room>();
     }
 
     public Room(string name)
