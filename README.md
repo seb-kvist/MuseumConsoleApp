@@ -38,7 +38,7 @@ dotnet restore
 dotnet run --project ennattpamuseet
 ```
 When the program starts, an introduction will guide you on how to navigate through the museum.
-##Testing
+## Testing
 
 To run the unit tests, use the following command:
 ```
