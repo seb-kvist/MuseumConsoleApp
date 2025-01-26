@@ -33,7 +33,7 @@ cd ennattpamuseet
 ```
 dotnet restore
 ```
-###Run the application
+### Run the application
 ```
 dotnet run --project ennattpamuseet
 ```
@@ -44,7 +44,7 @@ To run the unit tests, use the following command:
 ```
 dotnet test
 ```
-##Features
+## Features
 
 - Navigate between different rooms in the museum following a logical map.
 - View artwork in each room, including their title, description, and creator.
