@@ -1,51 +1,51 @@
-# En Natt På Museet
+# A Night at the Museum
 
-En Natt På Museet är en konsolapplikation utvecklad med C# och .NET 8.0. Programmet låter användare navigera runt i ett museum och interagera med dess rum och konstverk enligt en fördefinierad karta. Applikationen är designad för att enkelt kunna uppdateras med nya rum eller flytt av konstverk.
+**A Night at the Museum** is a console application developed in C# with .NET 8.0. The program allows users to navigate through a museum, exploring its rooms and interacting with the displayed artwork based on a predefined map. The application is designed for easy updates, enabling new rooms or artwork to be added or moved effortlessly.
 
-## Krav
+## Requirements
 
-Innan du kör projektet, säkerställ att följande är installerat på ditt system:
+Before running the project, ensure the following are installed on your system:
 
-- .NET 8.0 SDK eller senare
-- En kodredigerare som Visual Studio (rekommenderas) eller Visual Studio Code
+- **.NET 8.0 SDK** or later
+- A code editor such as **Visual Studio** (recommended) or **Visual Studio Code**
 
-## Paket
+## Packages
 
-Projektet använder följande NuGet-paket, vilka automatiskt återställs vid byggnation av projektet:
+The project uses the following NuGet packages, which are automatically restored during the build process:
 
 - `coverlet.collector` (6.0.0)
 - `Microsoft.NET.Test.Sdk` (17.8.0)
 - `xunit` (2.5.3)
 - `xunit.runner.visualstudio` (2.5.3)
 
-Du behöver inte installera dessa manuellt, de återställs genom att köra `dotnet restore`.
+You do not need to install these packages manually. They will be restored by running `dotnet restore`.
 
-## Setup-instruktioner
+## Setup Instructions
 
-### Klona detta repo
+### Clone this repository
 
 ```bash
-git clone https://github.com/ditt-github-konto/ennattpamuseet.git
+git clone https://github.com/your-github-username/ennattpamuseet.git
 cd ennattpamuseet
 
-Återställ nödvändiga paket
+Restore required packages
 
 dotnet restore
 
-Kör applikationen
+Run the application
 
 dotnet run --project ennattpamuseet
 
-När programmet startar, visas en introduktion om hur du navigerar i museet.
-Testning
+When the program starts, an introduction will guide you on how to navigate through the museum.
+Testing
 
-För att köra enhetstesterna, använd följande kommando:
+To run the unit tests, use the following command:
 
 dotnet test
 
-Funktioner
+Features
 
-    Navigera mellan olika rum i museet enligt en logisk karta.
-    Se konstverk i varje rum, inklusive deras titel, beskrivning och upphovsmakare.
-    Flexibel struktur som gör det enkelt att lägga till nya rum eller flytta konstverk.
-    Minst tre implementerade enhetstester för att säkerställa programmets funktionalitet.
+    Navigate between different rooms in the museum following a logical map.
+    View artwork in each room, including their title, description, and creator.
+    Flexible structure to easily add new rooms or relocate artwork.
+    Includes at least three implemented unit tests to ensure the program's functionality.
