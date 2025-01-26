@@ -1,29 +1,51 @@
-# ennattpamuseet
+# En Natt På Museet
 
-Kravspecifikation:
+En Natt På Museet är en konsolapplikation utvecklad med C# och .NET 8.0. Programmet låter användare navigera runt i ett museum och interagera med dess rum och konstverk enligt en fördefinierad karta. Applikationen är designad för att enkelt kunna uppdateras med nya rum eller flytt av konstverk.
 
-    Lösningen ska bestå av en körbar konsolapplikation skriven i C#.
-    När man startar programmet ska man som användare starta i muséets entré, och kunna navigera runt i hela byggnaden enligt kartan.
-    När programmet startar ska man få en förklaring på hur man använder programmet.
-    Det ska inte gå att "magiskt" förflytta sig i museet, vill man komma till det blå rummet måste man alltså gå via korridoren och det gröna rummet.
-    När man befinner sig i ett rum ska man kunna se, antigen automatiskt eller via ett val, de konstverk som finns i rummet. Se listan nedanför med konstverk i rummen.
-    Strukturen på ert program måste vara så att det vore enkelt att flytta konstverk mellan rummen i muséet, eller att bygga om muséet med olika rum.
-    Varje konstverk i muséet har en titel, beskrivning och en upphovsmakare.
-    Den inlämnade konsolapplikationen ska bestå av en "Program.cs" fil, en ".csproj" fil samt en fil för varje extra klass ni skapar.
-    Konsolapplikationen ska lämnas in med ett tillhörande testprogram, där minst 3 enhetstester är implementerade.
-    Ingen information behöver sparas mellan körningar av programmet.
+## Krav
 
-Konstverk:
+Innan du kör projektet, säkerställ att följande är installerat på ditt system:
 
-I denna uppgift får ni själva välja vilken typ av museum som ni har virtualiserat, välj gärna något som ni själva har intresse av!
+- .NET 8.0 SDK eller senare
+- En kodredigerare som Visual Studio (rekommenderas) eller Visual Studio Code
 
-Detta antal av konstverk ska finnas i varje rum:
+## Paket
 
-    Vita rummet: ett (1) konstverk
-    Svarta rummet: inga (0) konstverk
-    Lila rummet: fyra (4) konstverk
-    Blåa rummet: ett (1) konstverk
-    Röda rummet: tre (3) konstverk
-    Gröna rummet: två (2) konstverk
-    Korridoren: inga (0) konstverk
-    Entrén: inga (0) konstverk
+Projektet använder följande NuGet-paket, vilka automatiskt återställs vid byggnation av projektet:
+
+- `coverlet.collector` (6.0.0)
+- `Microsoft.NET.Test.Sdk` (17.8.0)
+- `xunit` (2.5.3)
+- `xunit.runner.visualstudio` (2.5.3)
+
+Du behöver inte installera dessa manuellt, de återställs genom att köra `dotnet restore`.
+
+## Setup-instruktioner
+
+### Klona detta repo
+
+```bash
+git clone https://github.com/ditt-github-konto/ennattpamuseet.git
+cd ennattpamuseet
+
+Återställ nödvändiga paket
+
+dotnet restore
+
+Kör applikationen
+
+dotnet run --project ennattpamuseet
+
+När programmet startar, visas en introduktion om hur du navigerar i museet.
+Testning
+
+För att köra enhetstesterna, använd följande kommando:
+
+dotnet test
+
+Funktioner
+
+    Navigera mellan olika rum i museet enligt en logisk karta.
+    Se konstverk i varje rum, inklusive deras titel, beskrivning och upphovsmakare.
+    Flexibel struktur som gör det enkelt att lägga till nya rum eller flytta konstverk.
+    Minst tre implementerade enhetstester för att säkerställa programmets funktionalitet.
